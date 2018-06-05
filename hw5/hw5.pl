@@ -18,6 +18,6 @@ shedule(S,P,T) :- enroll(S,C), where(C,P), when(C,T).
 
 usage(P,T) :- where(C,P), when(C,T).
 
-conflict(X,Y) :- where(X,A), when(X,B), where(Y,C), when(Y,D), A=C, B=D, X\=Y.
+conflict(X,Y) :- where(X,A), when(X,B), where(Y,A), when(Y,B), X\=Y.
 
 meet (X, Y) :- enroll(X, K), where (K, W), when (K, T)
