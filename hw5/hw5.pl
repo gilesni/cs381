@@ -14,7 +14,7 @@ enroll(mary,261).
 enroll(john,381).
 enroll(jim,399).
 
-hedual(S,P,T) :- enroll(S,C), where(C,P), when(C,T).
+shedule(S,P,T) :- enroll(S,C), where(C,P), when(C,T).
 
 usage(P,T) :- where(C,P), when(C,T).
 
